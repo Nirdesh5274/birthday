@@ -310,24 +310,7 @@
     }, 500);
   </script>
 
-  <script>
-    const musicFiles = [
-      'h.mp3', // First music
-      'ha.mp3', // Second music
-      'haa.mp3' // Third music
-    ];
-
-    let currentMusicIndex = 0;
-    const musicElement = document.getElementById('background-music');
-
-    function changeMusic() {
-      currentMusicIndex = (currentMusicIndex + 1) % musicFiles.length;
-      musicElement.src = musicFiles[currentMusicIndex];
-      musicElement.play();
-    }
-
-    setInterval(changeMusic, 15000); // Change music every 15 seconds
-  </script>
+  
   <audio id="background-music" autoplay loop>
     <source src="h.mp3" type="audio/mp3">
   </audio>
